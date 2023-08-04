@@ -1,6 +1,6 @@
-import type { DocumentContext } from 'next/document';
-import { Html, Head, Main, NextScript } from 'next/document';
 import i18n from 'i18next';
+import type { DocumentContext } from 'next/document';
+import { Head, Html, Main, NextScript } from 'next/document';
 
 export default function Document({ locale }: DocumentContext) {
   return (

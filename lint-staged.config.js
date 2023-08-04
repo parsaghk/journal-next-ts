@@ -12,11 +12,11 @@ const nextSrcEslint = (filenames) => {
 };
 
 module.exports = {
-  '*.(ts|tsx)': () => 'yarn tsc --noEmit',
+  '*.(ts|tsx)': () => 'tsc --noEmit',
   '*.{js,jsx,ts,tsx}': [
-    (filenames) => `yarn prettier --write ${filenames.join(' ')}`,
+    (filenames) => `prettier --write ${filenames.join(' ')}`,
     nextSrcEslint,
   ],
   '**/*.(md|json|yml|yaml)': (filenames) =>
-    `yarn prettier --write ${filenames.join(' ')}`,
+    `prettier --write ${filenames.join(' ')}`,
 };

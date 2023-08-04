@@ -15,19 +15,18 @@
     "jsx": "preserve",
     "incremental": true,
     "paths": {
-      "@assets/*":  ["./src/assets/*"],
+      "@assets/*": ["./src/assets/*"],
       "@components/*": ["./src/components/*"],
-      "@constants/*":  ["./src/constants/*"],
+      "@constants/*": ["./src/constants/*"],
       "@hooks/*": ["./src/hooks/*"],
-      "@layouts/*":  ["./src/layouts/*"],
+      "@layouts/*": ["./src/layouts/*"],
       "@pages/*": ["./src/pages/*"],
-      "@shared/*":  ["./src/shared/*"],
+      "@shared/*": ["./src/shared/*"],
       "@store/*": ["./src/store/*"],
-      "@styles/*":  ["./src/styles/*"],
+      "@styles/*": ["./src/styles/*"],
       "@utils/*": ["./src/utils/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }
-
