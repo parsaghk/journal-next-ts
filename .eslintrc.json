@@ -6,11 +6,12 @@
     "plugin:@typescript-eslint/recommended"
   ],
   "parser": "@typescript-eslint/parser",
+  "overrides": [],
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["@typescript-eslint", "react"],
+  "plugins": ["simple-import-sort", "@typescript-eslint", "react"],
   "rules": {
     "react/jsx-wrap-multilines": "error",
     "react/jsx-curly-brace-presence": "error",
@@ -21,6 +22,13 @@
         "html": true
       }
     ],
+    "simple-import-sort/imports": [
+      "error",
+      {
+        "groups": [["^\\u0000", "^@?\\w", "^[^.]", "^\\."]]
+      }
+    ],
+    "simple-import-sort/exports": "error",
     "@typescript-eslint/no-unused-vars": [
       "error",
       {
@@ -28,7 +36,6 @@
         "destructuredArrayIgnorePattern": "^_"
       }
     ],
-    "@typescript-eslint/no-explicit-any": "error",
-    "@typescript-eslint/consistent-type-imports": "error"
+    "@typescript-eslint/no-explicit-any": "error"
   }
 }
