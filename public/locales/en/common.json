@@ -1,3 +1,14 @@
 {
-  "example": "This is sample text for i18n"
+  "example": "This is sample text for i18n",
+  "sidebar": {
+    "users": "Users",
+    "dashboard": "Dashboard",
+    "articles": "Articles",
+    "settings": "Settings",
+    "article-types": "Article Types",
+    "users-management": "User Management",
+    "article-categories": "Article Categories",
+    "roles": "Roles",
+    "permissions": "Permissions"
+  }
 }

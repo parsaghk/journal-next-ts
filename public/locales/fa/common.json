@@ -1,3 +1,14 @@
 {
-  "example": "این یک متن تستی برای تست چند زبانگی می باشد"
+  "example": "این یک متن تستی برای تست چند زبانگی می باشد",
+  "sidebar": {
+    "users": "کاربران",
+    "dashboard": "داشبورد",
+    "articles": "مقالات",
+    "settings": "تنظیمات",
+    "users-management": "مدیریت کاربران",
+    "article-types": "انواع مقاله",
+    "article-categories": "دسته بندی های مقاله",
+    "roles": "نقش ها",
+    "permissions": "دسترسی ها"
+  }
 }
