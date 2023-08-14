@@ -1,5 +1,10 @@
 import '@styles/globals.scss';
 import { TDashboardLayout } from '@layouts/DashboardLayout';
+import {
+  Hydrate,
+  QueryClient,
+  QueryClientProvider,
+} from '@tanstack/react-query';
 import { ConfigProvider } from 'antd';
 import { NextPage } from 'next';
 import { AppProps } from 'next/app';
@@ -13,17 +18,26 @@ export type NextPageWithLayout<P = object, IP = P> = NextPage<P, IP> & {
 type AppPropsWithLayout = AppProps & {
   Component: NextPageWithLayout;
 };
-
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      refetchOnWindowFocus: false,
+    },
+  },
+});
 function App({ Component, pageProps }: AppPropsWithLayout) {
   const PageLayout = Component.getLayout;
   if (!PageLayout) return <Component {...pageProps} />;
-
   return (
-    <ConfigProvider>
-      <PageLayout>
-        <Component {...pageProps} />
-      </PageLayout>
-    </ConfigProvider>
+    <QueryClientProvider client={queryClient}>
+      <Hydrate state={pageProps.dehydratedState}>
+        <ConfigProvider>
+          <PageLayout>
+            <Component {...pageProps} />
+          </PageLayout>
+        </ConfigProvider>
+      </Hydrate>
+    </QueryClientProvider>
   );
 }
 
