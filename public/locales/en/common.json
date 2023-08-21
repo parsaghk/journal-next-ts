@@ -1,5 +1,12 @@
 {
   "example": "This is sample text for i18n",
+  "navbar": {
+    "about-us": "About Us",
+    "categories": "Categories",
+    "home": "Home",
+    "register": "Register",
+    "login": "Login"
+  },
   "sidebar": {
     "users": "Users",
     "dashboard": "Dashboard",
