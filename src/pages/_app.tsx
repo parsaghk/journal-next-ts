@@ -5,6 +5,7 @@ import {
   QueryClient,
   QueryClientProvider,
 } from '@tanstack/react-query';
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import { ConfigProvider } from 'antd';
 import { NextPage } from 'next';
 import { AppProps } from 'next/app';
@@ -18,25 +19,27 @@ export type NextPageWithLayout<P = object, IP = P> = NextPage<P, IP> & {
 type AppPropsWithLayout = AppProps & {
   Component: NextPageWithLayout;
 };
-const queryClient = new QueryClient({
-  defaultOptions: {
-    queries: {
-      refetchOnWindowFocus: false,
-    },
-  },
-});
+
 function App({ Component, pageProps }: AppPropsWithLayout) {
+  const [queryClient] = React.useState(() => new QueryClient());
   const PageLayout = Component.getLayout;
-  if (!PageLayout) return <Component {...pageProps} />;
+  const Page = () =>
+    PageLayout ? (
+      <PageLayout>
+        <Component {...pageProps} />
+      </PageLayout>
+    ) : (
+      <Component {...pageProps} />
+    );
+  // if (!PageLayout) return <Component {...pageProps} />;
   return (
     <QueryClientProvider client={queryClient}>
       <Hydrate state={pageProps.dehydratedState}>
         <ConfigProvider>
-          <PageLayout>
-            <Component {...pageProps} />
-          </PageLayout>
+          <Page />
         </ConfigProvider>
       </Hydrate>
+      <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>
   );
 }
