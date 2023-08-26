@@ -6,16 +6,22 @@ import {
 } from '@ant-design/icons';
 import { Layout, Menu, MenuProps } from 'antd';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
-import React from 'react';
-import { TSidebar } from './types';
 
-const Sidebar: React.FC<TSidebar> = ({ selectedKeyList }) => {
+function getSelectedKeys(pathname: string): string[] {
+  const pathList: string[] = pathname.match(/([^/]+)/g) ?? [];
+  pathList.shift();
+  return pathList;
+}
+
+const Sidebar = () => {
   const { t } = useTranslation();
+  const router = useRouter();
   const sidebarItemList: MenuProps['items'] = [
     {
       key: 'dashboard',
-      label: <Link href="/admin/dashboard">{t('sidebar.users')}</Link>,
+      label: <Link href="/admin/dashboard">{t('sidebar.dashboard')}</Link>,
       icon: <AppstoreOutlined />,
     },
     {
@@ -99,8 +105,8 @@ const Sidebar: React.FC<TSidebar> = ({ selectedKeyList }) => {
       <Menu
         theme="dark"
         mode="inline"
-        defaultOpenKeys={selectedKeyList}
-        selectedKeys={selectedKeyList}
+        defaultOpenKeys={getSelectedKeys(router.pathname)}
+        selectedKeys={getSelectedKeys(router.pathname)}
         items={sidebarItemList}
       />
     </Layout.Sider>
