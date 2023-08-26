@@ -3,3 +3,4 @@ node_modules
 .husky
 lint-staged.config.js
 commitlint.config.js
+next.config.js
