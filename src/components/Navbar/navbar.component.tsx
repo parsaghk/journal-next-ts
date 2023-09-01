@@ -1,4 +1,5 @@
-import { GlobalOutlined } from '@ant-design/icons';
+import { GlobalOutlined, UserOutlined } from '@ant-design/icons';
+import Hydration from '@components/Hydration';
 import { localeToLanguageDataMapper } from '@shared/constants';
 import { Button, Dropdown, Layout, Menu, MenuProps, Space, theme } from 'antd';
 import Image from 'next/image';
@@ -6,8 +7,10 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
 import React from 'react';
+import { TNavbar } from './types';
 
-export default function Navbar() {
+export default function Navbar({ onLogout, userSummary }: TNavbar) {
+  console.log({ userSummary });
   const { t, i18n } = useTranslation();
   const router = useRouter();
   const dir = i18n.dir(i18n.language);
@@ -20,16 +23,7 @@ export default function Navbar() {
       key,
       label: (
         <Link href={router.pathname} locale={key}>
-          <Space
-          // onClick={() => {
-          //   i18n.changeLanguage(key);
-          //   router.push(
-          //     { pathname: router.pathname, query: router.query },
-          //     router.asPath,
-          //     { locale: key }
-          //   );
-          // }}
-          >
+          <Space>
             {value.flag}
             {value.language}
           </Space>
@@ -63,6 +57,7 @@ export default function Navbar() {
         <Image src="/logo.svg" width={40} height={40} alt="logo" />
         <Menu
           mode="horizontal"
+          className="w-80"
           // selectedKeys={}
           items={menuItemList}
         />
@@ -75,26 +70,45 @@ export default function Navbar() {
             <GlobalOutlined />
           </Space>
         </Dropdown>
-        <Button onClick={() => router.push('/auth/login')}>
-          {t('navbar.login')}
-        </Button>
-        <Button onClick={() => router.push('/auth/register')} type="primary">
-          {t('navbar.register')}
-        </Button>
+        <Hydration>
+          {userSummary ? (
+            <Dropdown
+              menu={{
+                items: [
+                  {
+                    key: 1,
+                    label: (
+                      <Link href="/admin/dashboard">
+                        {t('navbar.dashboard')}
+                      </Link>
+                    ),
+                  },
+                  {
+                    key: 2,
+                    onClick: onLogout,
+                    label: t('navbar.logout'),
+                    // <Link href="/admin/dashboard">{t('login.dashboard')}</Link>
+                  },
+                ],
+              }}
+            >
+              <Button icon={<UserOutlined />} />
+            </Dropdown>
+          ) : (
+            <Space>
+              <Button onClick={() => router.push('/auth/login')}>
+                {t('navbar.login')}
+              </Button>
+              <Button
+                onClick={() => router.push('/auth/register')}
+                type="primary"
+              >
+                {t('navbar.register')}
+              </Button>
+            </Space>
+          )}
+        </Hydration>
       </Space>
     </Layout.Header>
-    // <Space className="w-full justify-between p-4 shadow-lg">
-    //   <Space className="gap-16">
-    //     <Space>
-    //       <Typography>{t('navbar.home')}</Typography>
-    //       <Typography>{t('navbar.categories')}</Typography>
-    //       <Typography>{t('navbar.about-us')}</Typography>
-    //     </Space>
-    //   </Space>
-    //   <Space>
-    //     <Button>{t('navbar.login')}</Button>
-    //     <Button type="primary">{t('navbar.register')}</Button>
-    //   </Space>
-    // </Space>
   );
 }

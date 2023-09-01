@@ -5,7 +5,9 @@
     "categories": "دسته بندی ها",
     "home": "خانه",
     "register": "ثبت نام",
-    "login": "ورود"
+    "login": "ورود",
+    "dashboard": "داشبورد",
+    "logout": "خروج"
   },
   "sidebar": {
     "users": "کاربران",

@@ -5,7 +5,9 @@
     "categories": "Categories",
     "home": "Home",
     "register": "Register",
-    "login": "Login"
+    "login": "Login",
+    "dashboard": "Dashboard",
+    "logout": "Logout"
   },
   "sidebar": {
     "users": "Users",

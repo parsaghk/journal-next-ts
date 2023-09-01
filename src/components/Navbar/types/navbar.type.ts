@@ -1,3 +1,6 @@
+import { TUserSummary } from '@shared/types';
+
 export type TNavbar = {
-  fullName: string;
+  userSummary?: TUserSummary;
+  onLogout: () => void;
 };
