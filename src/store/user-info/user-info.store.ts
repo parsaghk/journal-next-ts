@@ -9,6 +9,7 @@ export const useUserInfoStore = create<TUserInfoStore>()(
       (set) => ({
         user: undefined,
         setUserData: (data: TUserSummary) => set(() => ({ user: data })),
+        removeUserData: () => set(() => ({ user: undefined })),
       }),
       { name: 'user-info' }
     )
