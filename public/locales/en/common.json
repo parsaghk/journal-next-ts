@@ -1,5 +1,20 @@
 {
   "example": "This is sample text for i18n",
+  "login": {
+    "submit": "Submit",
+    "username": {
+      "label": "Username",
+      "validations": {
+        "required-message": "Please enter username!"
+      }
+    },
+    "password": {
+      "label": "Password",
+      "validations": {
+        "required-message": "Please enter password!"
+      }
+    }
+  },
   "navbar": {
     "about-us": "About Us",
     "categories": "Categories",
@@ -19,5 +34,71 @@
     "article-categories": "Article Categories",
     "roles": "Roles",
     "permissions": "Permissions"
+  },
+  "register": {
+    "success": "Registration completed successfully!",
+    "login-details": {
+      "step-key": "Login Details",
+      "username": {
+        "label": "Username",
+        "validations": {
+          "required-message": "Please enter username!"
+        }
+      },
+      "email": {
+        "label": "Email",
+        "validations": {
+          "required-message": "Please enter email!",
+          "type-message": "Please enter valid email!"
+        }
+      },
+      "password": {
+        "label": "Password",
+        "validations": {
+          "required-message": "Please enter password!"
+        }
+      }
+    },
+    "personal-information": {
+      "step-key": "Personal Information",
+      "first-name": {
+        "label": "First Name",
+        "validations": {
+          "required-message": "Please enter first name!"
+        }
+      },
+      "middle-name": {
+        "label": "Middle Name"
+      },
+      "last-name": {
+        "label": "Last Name",
+        "validations": {
+          "required-message": "Please enter last name!"
+        }
+      }
+    },
+    "institution-related-information": {
+      "step-key": "Institution Related Information",
+      "position": { "label": "Position" },
+      "institution": { "label": "Institution" },
+      "department": { "label": "Department" },
+      "address": { "label": "Address" },
+      "zip-code": { "label": "Zip Code" },
+      "country": { "label": "Country" },
+      "state": { "label": "State" },
+      "city": { "label": "City" }
+    },
+    "areas-of-interest-or-expertise": {
+      "step-key": "Areas Of Interest Or Expertise",
+      "personal-keywords": {
+        "button": "Add Personal Keywords",
+        "label": "Personal Keywords",
+        "placeholder": "keyword",
+        "validations": {
+          "non-empty-field": "Please input keyword or delete this field.",
+          "minimum-two-item-message": "Please enter two keywords at least."
+        }
+      }
+    }
   }
 }

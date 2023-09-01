@@ -1,5 +1,20 @@
 {
   "example": "این یک متن تستی برای تست چند زبانگی می باشد",
+  "login": {
+    "username": {
+      "label": "نام کاربری",
+      "validations": {
+        "required-message": "نام کاربری خود را وارد کنید!"
+      }
+    },
+    "password": {
+      "label": "رمز عبور",
+      "validations": {
+        "required-message": "رمز عبور خود را وارد کنید!"
+      }
+    },
+    "submit": "ورود"
+  },
   "navbar": {
     "about-us": "درباره ما",
     "categories": "دسته بندی ها",
@@ -19,5 +34,54 @@
     "article-categories": "دسته بندی های مقاله",
     "roles": "نقش ها",
     "permissions": "دسترسی ها"
+  },
+  "register": {
+    "login-details": {
+      "step-key": "اطلاعات ورود",
+      "username": {
+        "label": "نام کاربری",
+        "validations": {
+          "required-message": "لطفا نام کاربری را وارد کنید!"
+        }
+      },
+      "password": {
+        "label": "رمز عبور",
+        "validations": {
+          "required-message": "لطفا رمز عبور را وارد کنید!"
+        }
+      }
+    },
+    "personal-information": {
+      "step-key": "اطلاعات شخصی",
+      "first-name": {
+        "label": "نام",
+        "validations": {
+          "required-message": "لطفا نام را وارد کنید"
+        }
+      },
+      "middle-name": {
+        "label": "نام میانی"
+      },
+      "last-name": {
+        "label": "نام خانوادگی",
+        "validations": {
+          "required-message": "لطفا نام خانوادگی را وارد کنید"
+        }
+      }
+    },
+    "institution-related-information": {
+      "step-key": "اطلاعات مربوط به آموزشگاه",
+      "position": { "label": "موقعیت" },
+      "institution": { "label": "آموزشگاه" },
+      "department": { "label": "دپارتمان" },
+      "street": { "label": "خیابان" },
+      "zip-code": { "label": "کد پستی" },
+      "country": { "label": "کشور" },
+      "state": { "label": "استان" },
+      "city": { "label": "شهر" }
+    },
+    "areas-of-interest-or-expertise": {
+      "step-key": "زمینه های مورد علاقه یا تخصص"
+    }
   }
 }
