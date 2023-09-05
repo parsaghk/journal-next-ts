@@ -1,4 +1,22 @@
 {
+  "article-types-view": {
+    "title": "Article Types",
+    "description": "You can manage your article types here",
+    "add": "Create new article type",
+    "table": {
+      "title": "Title",
+      "actions": "Actions",
+      "edit": "Edit"
+    }
+  },
+  "article-types-new": {
+    "title": "Create new article type",
+    "description": "You can add new article type here!"
+  },
+  "article-types-edit": {
+    "title": "Edit new article type",
+    "description": "You can edit new article type here!"
+  },
   "example": "This is sample text for i18n",
   "dashboard-description-section": {
     "back": "Back"
