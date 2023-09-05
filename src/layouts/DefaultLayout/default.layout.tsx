@@ -7,7 +7,6 @@ import { TDefaultLayout } from './types';
 function DefaultLayout({ children }: TDefaultLayout) {
   const { mutate: logout } = useLogout();
   const user = useUserInfoStore((state) => state.user);
-  user?.firstName;
   return (
     <Layout className="min-h-screen">
       <Navbar

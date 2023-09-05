@@ -62,7 +62,6 @@ export default function RegisterPage() {
     useGetCityListOfState(stateId as string, { enabled: !!stateId });
   const { mutate: register } = useRegister();
   const [form] = Form.useForm<TRegisterForm>();
-  console.log('fields ===>', form.getFieldsValue());
   const { t } = useTranslation();
   const [currentStep, setCurrentStep] = React.useState<number>(0);
 
@@ -319,7 +318,6 @@ export default function RegisterPage() {
             >
               <Select
                 onSelect={(cityId) => {
-                  console.log('heereeee');
                   form.setFieldValue('cityId', cityId);
                 }}
                 showSearch={true}

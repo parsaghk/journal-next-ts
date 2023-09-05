@@ -10,7 +10,6 @@ import React from 'react';
 import { TNavbar } from './types';
 
 export default function Navbar({ onLogout, userSummary }: TNavbar) {
-  console.log({ userSummary });
   const { t, i18n } = useTranslation();
   const router = useRouter();
   const dir = i18n.dir(i18n.language);
