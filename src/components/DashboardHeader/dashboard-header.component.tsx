@@ -1,10 +1,11 @@
 import { PoweroffOutlined, UserOutlined } from '@ant-design/icons';
+import Hydration from '@components/Hydration';
 import { Avatar, Button, Layout, Space, theme, Typography } from 'antd';
 import React from 'react';
 import { TDashboardHeader } from './types';
 
 const DashboardHeader: React.FC<TDashboardHeader> = ({
-  adminFullName,
+  userSummary,
   onLogoutButtonClick,
 }) => {
   const {
@@ -18,9 +19,11 @@ const DashboardHeader: React.FC<TDashboardHeader> = ({
             style={{ backgroundColor: colorPrimary }}
             icon={<UserOutlined />}
           />
-          <Typography.Text style={{ color: colorTextLightSolid }}>
-            {adminFullName}
-          </Typography.Text>
+          <Hydration>
+            <Typography.Text style={{ color: colorTextLightSolid }}>
+              {userSummary?.firstName} {userSummary?.lastName}
+            </Typography.Text>
+          </Hydration>
         </Space>
         <Button
           type="default"

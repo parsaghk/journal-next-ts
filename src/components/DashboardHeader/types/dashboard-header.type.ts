@@ -1,4 +1,6 @@
+import { TUserSummary } from '@shared/types';
+
 export type TDashboardHeader = {
-  adminFullName: string;
+  userSummary?: TUserSummary;
   onLogoutButtonClick: () => void;
 };

@@ -1,17 +1,19 @@
 import DashboardHeader from '@components/DashboardHeader';
 import Sidebar from '@components/Sidebar';
+import { useLogout } from '@hooks/auth';
+import { useUserInfoStore } from '@store/user-info';
 import { Layout } from 'antd';
 import { TDashboardLayout } from './types';
 
 function DashboardLayout({ children }: TDashboardLayout) {
+  const { user } = useUserInfoStore((state) => state);
+  const { mutate: logout } = useLogout();
   return (
     <Layout className="min-h-screen">
       <Sidebar />
+
       <Layout className="site-layout">
-        <DashboardHeader
-          adminFullName="Parsa"
-          onLogoutButtonClick={console.log}
-        />
+        <DashboardHeader onLogoutButtonClick={logout} userSummary={user} />
         <Layout className="h-full p-[24px]">{children}</Layout>
       </Layout>
     </Layout>
