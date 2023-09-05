@@ -1,5 +1,8 @@
 {
   "example": "این یک متن تستی برای تست چند زبانگی می باشد",
+  "dashboard-description-section": {
+    "back": "بازگشت"
+  },
   "login": {
     "username": {
       "label": "نام کاربری",

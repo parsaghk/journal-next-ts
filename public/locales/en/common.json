@@ -1,5 +1,8 @@
 {
   "example": "This is sample text for i18n",
+  "dashboard-description-section": {
+    "back": "Back"
+  },
   "login": {
     "submit": "Submit",
     "username": {
