@@ -1,4 +1,22 @@
 {
+  "article-categories-view": {
+    "title": "Article Types",
+    "description": "You can manage your article categories here",
+    "add": "Create new article category",
+    "table": {
+      "title": "Title",
+      "actions": "Actions",
+      "edit": "Edit"
+    }
+  },
+  "article-categories-new": {
+    "title": "Create new article category",
+    "description": "You can add new article category here!"
+  },
+  "article-categories-edit": {
+    "title": "Edit new article category",
+    "description": "You can edit new article category here!"
+  },
   "article-types-view": {
     "title": "Article Types",
     "description": "You can manage your article types here",
