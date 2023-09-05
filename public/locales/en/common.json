@@ -18,6 +18,13 @@
       }
     }
   },
+  "mutate-article-type-form": {
+    "title": {
+      "label": "Title",
+      "validations": { "required-message": "Please enter title!" }
+    },
+    "submit": "Submit"
+  },
   "navbar": {
     "about-us": "About Us",
     "categories": "Categories",

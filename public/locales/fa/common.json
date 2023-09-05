@@ -18,6 +18,13 @@
     },
     "submit": "ورود"
   },
+  "mutate-article-type-form": {
+    "title": {
+      "label": "عنوان",
+      "validations": { "required-message": "لطفا عنوان را وارد کنید." }
+    },
+    "submit": "ثبت"
+  },
   "navbar": {
     "about-us": "درباره ما",
     "categories": "دسته بندی ها",
