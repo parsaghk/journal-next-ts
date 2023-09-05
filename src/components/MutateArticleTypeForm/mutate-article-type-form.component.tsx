@@ -4,6 +4,7 @@ import { useTranslation } from 'next-i18next';
 import { TMutateArticleTypeFormInput } from './types';
 
 export default function MutateArticleTypeForm({
+  isLoading = false,
   onFinish,
   initialValues,
 }: TGeneralMutateFormProps<TMutateArticleTypeFormInput>) {
@@ -14,7 +15,6 @@ export default function MutateArticleTypeForm({
   const [form] = Form.useForm<TMutateArticleTypeFormInput>();
   return (
     <Form
-      // className="p-4"
       layout="vertical"
       initialValues={initialValues}
       onFinish={onFinish}
@@ -42,7 +42,12 @@ export default function MutateArticleTypeForm({
         className="rounded p-4 mt-[24px] flex justify-end"
         style={{ backgroundColor: colorBgContainer }}
       >
-        <Button type="primary" size="large" htmlType="submit">
+        <Button
+          loading={isLoading}
+          type="primary"
+          size="large"
+          htmlType="submit"
+        >
           {t('mutate-article-type-form.submit')}
         </Button>
       </Form.Item>

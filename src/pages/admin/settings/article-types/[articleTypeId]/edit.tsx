@@ -16,7 +16,7 @@ function EditNewArticleType() {
   const { t } = useTranslation();
   const router = useRouter();
   const { articleTypeId } = router.query;
-  const { mutate: updateArticleType } = useUpdateArticleType(
+  const { isLoading, mutate: updateArticleType } = useUpdateArticleType(
     articleTypeId as string
   );
   const { status, data: articleType } = useGetSingleArticleType(
@@ -31,6 +31,7 @@ function EditNewArticleType() {
       />
       <ReactQueryWrapper status={status}>
         <MutateArticleTypeForm
+          isLoading={isLoading}
           initialValues={articleType}
           onFinish={(inputs) => {
             updateArticleType(inputs);

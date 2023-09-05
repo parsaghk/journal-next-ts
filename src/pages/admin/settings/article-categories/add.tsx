@@ -9,7 +9,8 @@ import React from 'react';
 
 function AddNewArticleCategory() {
   const { t } = useTranslation();
-  const { mutate: createArticleCategory } = useCreateArticleCategory();
+  const { isLoading, mutate: createArticleCategory } =
+    useCreateArticleCategory();
 
   return (
     <React.Fragment>
@@ -18,8 +19,8 @@ function AddNewArticleCategory() {
         description={t('article-categories-new.description')}
         hasBackButton={true}
       />
-      \
       <MutateArticleCategoryForm
+        isLoading={isLoading}
         onFinish={(inputs) => {
           createArticleCategory(inputs);
         }}

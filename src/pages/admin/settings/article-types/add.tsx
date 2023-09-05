@@ -9,7 +9,7 @@ import React from 'react';
 
 function AddNewArticleType() {
   const { t } = useTranslation();
-  const { mutate: createArticleType } = useCreateArticleType();
+  const { isLoading, mutate: createArticleType } = useCreateArticleType();
 
   return (
     <React.Fragment>
@@ -18,8 +18,8 @@ function AddNewArticleType() {
         description={t('article-types-new.description')}
         hasBackButton={true}
       />
-      \
       <MutateArticleTypeForm
+        isLoading={isLoading}
         onFinish={(inputs) => {
           createArticleType(inputs);
         }}

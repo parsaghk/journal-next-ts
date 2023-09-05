@@ -16,7 +16,7 @@ function EditNewArticleCategory() {
   const { t } = useTranslation();
   const router = useRouter();
   const { articleCategoryId } = router.query;
-  const { mutate: updateArticleCategory } = useUpdateArticleCategory(
+  const { isLoading, mutate: updateArticleCategory } = useUpdateArticleCategory(
     articleCategoryId as string
   );
   const { status, data: articleCategory } = useGetSingleArticleCategory(
@@ -31,6 +31,7 @@ function EditNewArticleCategory() {
       />
       <ReactQueryWrapper status={status}>
         <MutateArticleCategoryForm
+          isLoading={isLoading}
           initialValues={articleCategory}
           onFinish={(inputs) => {
             updateArticleCategory(inputs);
