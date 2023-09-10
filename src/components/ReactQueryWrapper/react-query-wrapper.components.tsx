@@ -11,9 +11,9 @@ export default function ReactQueryWrapper({
   const reactQueryStatusToComponentMapper: Record<typeof status, JSX.Element> =
     {
       loading: <Spin className="flex h-full justify-center items-center" />,
-      success: children,
+      success: <>{children}</>,
       error: <Typography>{t('react-query-wrapper.error')}</Typography>,
-      idle: children,
+      idle: <>{children}</>,
     };
   return reactQueryStatusToComponentMapper[status];
 }

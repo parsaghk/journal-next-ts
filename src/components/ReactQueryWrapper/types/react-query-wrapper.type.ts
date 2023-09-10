@@ -1,4 +1,6 @@
+import React from 'react';
+
 export type TReactQueryWrapper = {
-  children: JSX.Element;
+  children: React.JSX.Element | React.JSX.Element[];
   status: 'success' | 'error' | 'loading' | 'idle';
 };
