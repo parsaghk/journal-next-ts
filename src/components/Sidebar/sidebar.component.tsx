@@ -74,6 +74,14 @@ const Sidebar = () => {
           ),
         },
         {
+          key: 'article-file-types',
+          label: (
+            <Link href="/admin/settings/article-file-types">
+              {t('sidebar.article-file-types')}
+            </Link>
+          ),
+        },
+        {
           key: 'article-categories',
           label: (
             <Link href="/admin/settings/article-categories">

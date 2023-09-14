@@ -17,6 +17,25 @@
     "title": "ویرایش دسته بندی مقاله",
     "description": "شما در اینجا می‌توانید دسته بندی مقاله خود را ویرایش کنید"
   },
+  "article-file-types-view": {
+    "title": "نوع فایل مقاله",
+    "description": "شما می‌توانید در اینجا انواع مقالات خود را مدیریت کنید!",
+    "add": "ایجاد نوع فایل مقاله جدید",
+    "table": {
+      "title": "عنوان",
+      "actions": "عملیات",
+      "edit": "ویرایش"
+    }
+  },
+  "article-file-types-new": {
+    "title": "ایجاد نوع فایل مقاله",
+    "description": "شما در اینجا می‌توانید یک نوع فایل مقاله جدید ایجاد کنید"
+  },
+  "article-file-types-edit": {
+    "title": "ویرایش نوع فایل مقاله",
+    "description": "شما در اینجا می‌توانید نوع فایل مقاله خود را ویرایش کنید"
+  },
+
   "article-types-view": {
     "title": "نوع مقاله",
     "description": "شما می‌توانید در اینجا انواع مقالات خود را مدیریت کنید!",
@@ -54,6 +73,13 @@
     },
     "submit": "ورود"
   },
+  "mutate-article-file-type-form": {
+    "title": {
+      "label": "عنوان",
+      "validations": { "required-message": "لطفا عنوان را وارد کنید." }
+    },
+    "submit": "ثبت"
+  },
   "mutate-article-type-form": {
     "title": {
       "label": "عنوان",
@@ -83,6 +109,7 @@
     "articles": "مقالات",
     "settings": "تنظیمات",
     "users-management": "مدیریت کاربران",
+    "article-file-types": "Article File Types",
     "article-types": "انواع مقاله",
     "article-categories": "دسته بندی های مقاله",
     "roles": "نقش ها",

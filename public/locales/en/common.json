@@ -17,6 +17,24 @@
     "title": "Edit new article category",
     "description": "You can edit new article category here!"
   },
+  "article-file-types-view": {
+    "title": "Article File Types",
+    "description": "You can manage your article file types here",
+    "add": "Create new article file type",
+    "table": {
+      "title": "Title",
+      "actions": "Actions",
+      "edit": "Edit"
+    }
+  },
+  "article-file-types-new": {
+    "title": "Create new article file type",
+    "description": "You can add new article file type here!"
+  },
+  "article-file-types-edit": {
+    "title": "Edit new article file type",
+    "description": "You can edit new article file type here!"
+  },
   "article-types-view": {
     "title": "Article Types",
     "description": "You can manage your article types here",
@@ -54,6 +72,13 @@
       }
     }
   },
+  "mutate-article-file-type-form": {
+    "title": {
+      "label": "Title",
+      "validations": { "required-message": "Please enter title!" }
+    },
+    "submit": "Submit"
+  },
   "mutate-article-type-form": {
     "title": {
       "label": "Title",
@@ -82,6 +107,7 @@
     "dashboard": "Dashboard",
     "articles": "Articles",
     "settings": "Settings",
+    "article-file-types": "Article File Types",
     "article-types": "Article Types",
     "users-management": "User Management",
     "article-categories": "Article Categories",
