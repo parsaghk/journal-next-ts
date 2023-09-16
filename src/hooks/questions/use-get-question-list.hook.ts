@@ -1,5 +1,4 @@
-import { TGetQuestionListRequest } from '@api/questions';
-import { getQuestionListApi } from '@api/questions/get-question-list/get-question-list.api';
+import { getQuestionListApi, TGetQuestionListRequest } from '@api/questions';
 import { useQuery } from '@tanstack/react-query';
 
 export function useGetQuestionList(inputs: TGetQuestionListRequest) {

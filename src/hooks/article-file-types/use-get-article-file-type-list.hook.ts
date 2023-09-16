@@ -1,5 +1,7 @@
-import { TGetArticleFileTypeListRequest } from '@api/article-file-types';
-import { getArticleFileTypeListApi } from '@api/article-file-types/get-article-file-type-list/get-article-file-type-list.api';
+import {
+  getArticleFileTypeListApi,
+  TGetArticleFileTypeListRequest,
+} from '@api/article-file-types';
 import { useQuery } from '@tanstack/react-query';
 
 export function useGetArticleFileTypeList(

@@ -1,5 +1,7 @@
-import { TGetArticleTypeListRequest } from '@api/article-types';
-import { getArticleTypeListApi } from '@api/article-types/get-article-type-list/get-article-type-list.api';
+import {
+  getArticleTypeListApi,
+  TGetArticleTypeListRequest,
+} from '@api/article-types';
 import { useQuery } from '@tanstack/react-query';
 
 export function useGetArticleTypeList(inputs: TGetArticleTypeListRequest) {

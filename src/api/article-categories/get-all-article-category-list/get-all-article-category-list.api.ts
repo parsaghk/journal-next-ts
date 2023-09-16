@@ -1,5 +1,6 @@
 import { axios } from '@utils/axios.util';
+import { TArticleCategory } from '../get-article-category-list';
 
 export function getAllArticleCategoryApi() {
-  return axios.get('/article-categories/all');
+  return axios.get<TArticleCategory[]>('/article-categories/all');
 }

@@ -1,5 +1,7 @@
-import { TGetArticleCategoryListRequest } from '@api/article-categories';
-import { getArticleCategoryListApi } from '@api/article-categories/get-article-category-list/get-article-category-list.api';
+import {
+  getArticleCategoryListApi,
+  TGetArticleCategoryListRequest,
+} from '@api/article-categories';
 import { useQuery } from '@tanstack/react-query';
 
 export function useGetArticleCategoryList(

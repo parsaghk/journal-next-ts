@@ -1,4 +1,4 @@
-import { getAllArticleCategoryApi } from '@api/article-categories/get-all-article-category-list';
+import { getAllArticleCategoryApi } from '@api/article-categories';
 import { useQuery } from '@tanstack/react-query';
 
 export function useGetAllArticleCategoryList() {
