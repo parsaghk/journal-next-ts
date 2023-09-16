@@ -1,5 +1,4 @@
-import { TAbstractFilter } from '@shared/types/abstract-filter.type';
-import { TAbstractSort } from '@shared/types/abstract-sort.type';
+import { TAbstractFilter, TAbstractSort } from '@shared/types';
 
 export type TGeneralAllEntityListRequest<
   K = TAbstractFilter,
