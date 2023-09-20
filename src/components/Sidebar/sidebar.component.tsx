@@ -26,7 +26,7 @@ const Sidebar = () => {
     },
     {
       key: 'articles',
-      label: t('sidebar.articles'),
+      label: <Link href="/admin/articles">{t('sidebar.articles')}</Link>,
       icon: <FileTextOutlined />,
     },
     {
