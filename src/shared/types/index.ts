@@ -8,6 +8,7 @@ export * from './general-entity-list-request.type';
 export * from './general-error-response.type';
 export * from './general-mutate-form-props.type';
 export * from './general-response.type';
+export * from './language.type';
 export * from './page-meta.type';
 export * from './pagination.type';
 export * from './plain-literal-object.type';
