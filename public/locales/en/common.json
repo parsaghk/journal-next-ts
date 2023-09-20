@@ -54,6 +54,14 @@
     "description": "You can edit new article type here!"
   },
   "constants": {
+    "article-status": {
+      "editing": "Editing",
+      "finalizing": "Finalizing",
+      "judging": "Judging",
+      "processing": "Processing",
+      "published": "Published",
+      "rejected": "Rejected"
+    },
     "role": {
       "editor": "Editor",
       "juror": "Juror",

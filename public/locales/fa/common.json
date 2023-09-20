@@ -55,6 +55,14 @@
     "description": "شما در اینجا می‌توانید نوع مقاله خود را ویرایش کنید"
   },
   "constants": {
+    "article-status": {
+      "editing": "ویراستاری",
+      "finalizing": "نهایی سازی",
+      "judging": "داوری",
+      "processing": "در حال پردازش",
+      "published": "منتشر شده",
+      "rejected": "رد شده"
+    },
     "role": {
       "editor": "ویراستار",
       "juror": "داور",
