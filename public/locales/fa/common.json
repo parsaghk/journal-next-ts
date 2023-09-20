@@ -54,6 +54,14 @@
     "title": "ویرایش نوع مقاله",
     "description": "شما در اینجا می‌توانید نوع مقاله خود را ویرایش کنید"
   },
+  "constants": {
+    "role": {
+      "editor": "ویراستار",
+      "juror": "داور",
+      "manager": "مدیر",
+      "user": "کاربر"
+    }
+  },
   "example": "این یک متن تستی برای تست چند زبانگی می باشد",
   "dashboard-description-section": {
     "back": "بازگشت"

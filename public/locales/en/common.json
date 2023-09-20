@@ -53,6 +53,14 @@
     "title": "Edit new article type",
     "description": "You can edit new article type here!"
   },
+  "constants": {
+    "role": {
+      "editor": "Editor",
+      "juror": "Juror",
+      "manager": "Manager",
+      "user": "User"
+    }
+  },
   "example": "This is sample text for i18n",
   "dashboard-description-section": {
     "back": "Back"
