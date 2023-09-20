@@ -1,4 +1,4 @@
-import { GlobalOutlined, UserOutlined } from '@ant-design/icons';
+import { DownOutlined, UserOutlined } from '@ant-design/icons';
 import Hydration from '@components/Hydration';
 import { localeToLanguageDataMapper } from '@shared/constants';
 import { Button, Dropdown, Layout, Menu, MenuProps, Space, theme } from 'antd';
@@ -63,11 +63,13 @@ export default function Navbar({ onLogout, userSummary }: TNavbar) {
       </Space>
       <Space>
         <Dropdown menu={{ items: dropDownItemList }}>
-          <Space>
-            {localeToLanguageDataMapper.get(i18n.language)?.flag}
-            {localeToLanguageDataMapper.get(i18n.language)?.language}
-            <GlobalOutlined />
-          </Space>
+          <Button>
+            <Space>
+              {localeToLanguageDataMapper.get(i18n.language)?.flag}
+              {localeToLanguageDataMapper.get(i18n.language)?.language}
+              <DownOutlined />
+            </Space>
+          </Button>
         </Dropdown>
         <Hydration>
           {userSummary ? (
@@ -95,7 +97,11 @@ export default function Navbar({ onLogout, userSummary }: TNavbar) {
             </Dropdown>
           ) : (
             <Space>
-              <Button onClick={() => router.push('/auth/login')}>
+              <Button
+                type="primary"
+                ghost
+                onClick={() => router.push('/auth/login')}
+              >
                 {t('navbar.login')}
               </Button>
               <Button
