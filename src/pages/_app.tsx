@@ -38,6 +38,9 @@ function App({ Component, pageProps, router }: AppPropsWithLayout) {
     () =>
       new QueryClient({
         defaultOptions: {
+          queries: {
+            refetchOnWindowFocus: false,
+          },
           mutations: {
             onSuccess: () => {
               notification.success({
