@@ -11,6 +11,7 @@ export function useLogin() {
     onSuccess: ({ data }) => {
       useTokenStore.getState().setTokens(data.tokens);
       useUserInfoStore.getState().setUserData(data.user);
+      useUserInfoStore.getState().setCurrentUserRole(data.user.roleList[0]);
       Router.push('/');
     },
   });
