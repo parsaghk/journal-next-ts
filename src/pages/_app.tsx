@@ -70,6 +70,7 @@ function App({ Component, pageProps, router }: AppPropsWithLayout) {
         <ConfigProvider
           direction={i18n?.dir(router.locale)}
           locale={appLocaleToAntDesignLocaleMapper.get(router.locale as string)}
+          theme={{ token: { fontFamily: 'Vazir' } }}
         >
           <QueryParamProvider
             adapter={NextAdapterPages}
