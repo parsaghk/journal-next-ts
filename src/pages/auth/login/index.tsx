@@ -1,6 +1,6 @@
 import { useLogin } from '@hooks/auth';
 import DefaultLayout from '@layouts/DefaultLayout';
-import { Button, Card, Col, Form, Input, Row, Space } from 'antd';
+import { Button, Col, Form, Input, Row, Space, theme } from 'antd';
 import { GetStaticProps } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -14,59 +14,67 @@ type TLoginForm = {
 
 export default function LoginPage() {
   const { t } = useTranslation();
+  const {
+    token: { colorBgContainer },
+  } = theme.useToken();
+
   const { mutate: login } = useLogin();
   const [form] = Form.useForm<TLoginForm>();
   return (
-    <Row>
-      <Col span={12} offset={6}>
-        <Card className="w-full max-w-lg">
-          <Space align="center" className="w-full justify-center">
-            <Link href="/">
-              <Image src="/logo.svg" width={80} height={80} alt="logo" />
-            </Link>
-          </Space>
-          <Form
-            name="basic"
-            layout="vertical"
-            form={form}
-            initialValues={{ remember: true }}
-            onFinish={(formData) => {
-              login(formData);
-            }}
-            autoComplete="off"
+    <Row justify="center">
+      <Col
+        className="p-4"
+        style={{ backgroundColor: colorBgContainer }}
+        xs={{ span: 24 }}
+        md={{ span: 12 }}
+        lg={{ span: 8 }}
+      >
+        <Space align="center" className="w-full justify-center">
+          <Link href="/">
+            <Image src="/logo.svg" width={80} height={80} alt="logo" />
+          </Link>
+        </Space>
+        <Form
+          name="basic"
+          layout="vertical"
+          form={form}
+          initialValues={{ remember: true }}
+          onFinish={(formData) => {
+            login(formData);
+          }}
+          autoComplete="off"
+        >
+          <Form.Item
+            label={t('login.username.label')}
+            name="username"
+            rules={[
+              {
+                required: true,
+                message: t('login.username.validations.required-message'),
+              },
+            ]}
           >
-            <Form.Item
-              label={t('login.username.label')}
-              name="username"
-              rules={[
-                {
-                  required: true,
-                  message: t('login.username.validations.required-message'),
-                },
-              ]}
-            >
-              <Input />
-            </Form.Item>
+            <Input />
+          </Form.Item>
 
-            <Form.Item
-              label={t('login.password.label')}
-              name="password"
-              rules={[
-                {
-                  required: true,
-                  message: t('login.password.validations.required-message'),
-                },
-              ]}
-            >
-              <Input.Password />
-            </Form.Item>
-            <Form.Item className="mt-8">
-              <Button block type="primary" htmlType="submit">
-                {t('login.submit')}
-              </Button>
-            </Form.Item>
-          </Form>
-        </Card>
+          <Form.Item
+            label={t('login.password.label')}
+            name="password"
+            rules={[
+              {
+                required: true,
+                message: t('login.password.validations.required-message'),
+              },
+            ]}
+          >
+            <Input.Password />
+          </Form.Item>
+          <Form.Item className="mt-8">
+            <Button block type="primary" htmlType="submit">
+              {t('login.submit')}
+            </Button>
+          </Form.Item>
+        </Form>
       </Col>
     </Row>
   );
