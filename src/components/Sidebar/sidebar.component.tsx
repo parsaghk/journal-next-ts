@@ -2,7 +2,6 @@ import {
   AppstoreOutlined,
   FileTextOutlined,
   SettingOutlined,
-  UserOutlined,
 } from '@ant-design/icons';
 import { Layout, Menu, MenuProps } from 'antd';
 import Link from 'next/link';
@@ -30,39 +29,8 @@ const Sidebar = () => {
       icon: <FileTextOutlined />,
     },
     {
-      key: 'users-management',
-      label: t('sidebar.users-management'),
-      icon: <UserOutlined />,
-      children: [
-        {
-          key: 'users',
-          label: (
-            <Link href="/admin/users-management/users">
-              {t('sidebar.users')}
-            </Link>
-          ),
-        },
-        {
-          key: 'roles',
-          label: (
-            <Link href="/admin/users-management/roles">
-              {t('sidebar.roles')}
-            </Link>
-          ),
-        },
-        {
-          key: 'permissions',
-          label: (
-            <Link href="/admin/users-management/permissions">
-              {t('sidebar.permissions')}
-            </Link>
-          ),
-        },
-      ],
-    },
-    {
       key: 'settings',
-      label: <Link href="/admin/settings">{t('sidebar.settings')}</Link>,
+      label: t('sidebar.settings'),
       icon: <SettingOutlined />,
       children: [
         {
@@ -86,6 +54,14 @@ const Sidebar = () => {
           label: (
             <Link href="/admin/settings/article-categories">
               {t('sidebar.article-categories')}
+            </Link>
+          ),
+        },
+        {
+          key: 'questions',
+          label: (
+            <Link href="/admin/settings/questions">
+              {t('sidebar.questions')}
             </Link>
           ),
         },
