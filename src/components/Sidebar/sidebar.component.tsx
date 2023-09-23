@@ -9,8 +9,8 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
 
-function getSelectedKeys(pathname: string): string[] {
-  const pathList: string[] = pathname.match(/([^/]+)/g) ?? [];
+function getSelectedKeys(asPath: string): string[] {
+  const pathList: string[] = asPath.match(/([^/]+)/g) ?? [];
   pathList.shift();
   return pathList;
 }
@@ -113,8 +113,8 @@ const Sidebar = () => {
       <Menu
         theme="dark"
         mode="inline"
-        defaultOpenKeys={getSelectedKeys(router.pathname)}
-        selectedKeys={getSelectedKeys(router.pathname)}
+        defaultOpenKeys={getSelectedKeys(router.asPath)}
+        selectedKeys={getSelectedKeys(router.asPath)}
         items={sidebarItemList}
       />
     </Layout.Sider>

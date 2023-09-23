@@ -29,7 +29,7 @@ export default function DashboardDescriptionSection({
           <Button
             type="text"
             icon={<ArrowRightOutlined />}
-            onClick={() => router.push(getPreviousPageUrl(router.pathname))}
+            onClick={() => router.push(getPreviousPageUrl(router.asPath))}
             size="small"
           >
             {t('dashboard-description-section.back')}
