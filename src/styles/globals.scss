@@ -1,4 +1,10 @@
 @import './preflight';
+@import 'fonts';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  font-family: Vazir, serif;
+}
