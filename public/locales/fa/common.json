@@ -110,6 +110,21 @@
     },
     "submit": "ثبت"
   },
+  "mutate-question-form": {
+    "content": {
+      "label": "محتوا",
+      "validations": {
+        "required-message": "لطفا محتوا را وارد کنید."
+      }
+    },
+    "type": {
+      "label": "نوع",
+      "validations": {
+        "required-message": "لطفا نوع را انتخاب کنید."
+      }
+    },
+    "submit": "ثبت"
+  },
   "navbar": {
     "about-us": "درباره ما",
     "categories": "دسته بندی ها",

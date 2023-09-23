@@ -109,6 +109,17 @@
     },
     "submit": "Submit"
   },
+  "mutate-question-form": {
+    "content": {
+      "label": "Content",
+      "validations": { "required-message": "Please enter content!" }
+    },
+    "type": {
+      "label": "Type",
+      "validations": { "required-message": "Please choose one type!" }
+    },
+    "submit": "Submit"
+  },
   "navbar": {
     "about-us": "About Us",
     "categories": "Categories",
