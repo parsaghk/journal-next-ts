@@ -1,11 +1,14 @@
 import { useTokenStore } from '@store/use-token';
 import Axios from 'axios';
 
-const { accessToken } = useTokenStore.getState();
-
 export const axios = Axios.create({
   baseURL: '/api',
-  headers: {
-    ...(accessToken && { Authorization: `Bearer ${accessToken}` }),
-  },
+});
+
+axios.interceptors.request.use((req) => {
+  if (!req.headers.Authorization) {
+    const { accessToken } = useTokenStore.getState();
+    req.headers.Authorization = `Bearer ${accessToken}`;
+  }
+  return req;
 });
