@@ -437,7 +437,7 @@ export default function RegisterPage() {
               register(formData as TRegisterRequest);
             }}
           >
-            <Card className="mb-2" title={t('register.login-details.title')}>
+            <Card className="mb-2" title={stepList[currentStep].title}>
               {formList[currentStep]}
             </Card>
             <Card>{buildButtonSection()}</Card>
