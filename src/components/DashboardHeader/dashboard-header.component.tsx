@@ -4,6 +4,7 @@ import {
   UserOutlined,
 } from '@ant-design/icons';
 import Hydration from '@components/Hydration';
+import LanguageDropdown from '@components/LanguageDropdown';
 import { RoleConstant } from '@constants/role.constant';
 import {
   Avatar,
@@ -53,8 +54,11 @@ const DashboardHeader: React.FC<TDashboardHeader> = ({
             </Dropdown>
           </Hydration>
         </Col>
+        <Col span={2}>
+          <LanguageDropdown />
+        </Col>
         <Col>
-          <Row gutter={16}>
+          <Row gutter={13}>
             <Col>
               <Space className="flex gap-1">
                 <Avatar

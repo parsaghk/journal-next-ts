@@ -1,6 +1,6 @@
-import { DownOutlined, UserOutlined } from '@ant-design/icons';
+import { UserOutlined } from '@ant-design/icons';
 import Hydration from '@components/Hydration';
-import { localeToLanguageDataMapper } from '@shared/constants';
+import LanguageDropdown from '@components/LanguageDropdown';
 import { Button, Dropdown, Layout, Menu, MenuProps, Space, theme } from 'antd';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -10,26 +10,8 @@ import React from 'react';
 import { TNavbar } from './types';
 
 export default function Navbar({ onLogout, userSummary }: TNavbar) {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const router = useRouter();
-  const dir = i18n.dir(i18n.language);
-  React.useEffect(() => {
-    document.body.dir = dir;
-  }, [dir]);
-  const dropDownItemList: MenuProps['items'] = [];
-  localeToLanguageDataMapper.forEach((value, key) => {
-    dropDownItemList.push({
-      key,
-      label: (
-        <Link href={router.pathname} locale={key}>
-          <Space>
-            {value.flag}
-            {value.language}
-          </Space>
-        </Link>
-      ),
-    });
-  });
   const menuItemList: MenuProps['items'] = [
     {
       key: 'home',
@@ -62,15 +44,7 @@ export default function Navbar({ onLogout, userSummary }: TNavbar) {
         />
       </Space>
       <Space>
-        <Dropdown menu={{ items: dropDownItemList }}>
-          <Button>
-            <Space>
-              {localeToLanguageDataMapper.get(i18n.language)?.flag}
-              {localeToLanguageDataMapper.get(i18n.language)?.language}
-              <DownOutlined />
-            </Space>
-          </Button>
-        </Dropdown>
+        <LanguageDropdown />
         <Hydration>
           {userSummary ? (
             <Dropdown
