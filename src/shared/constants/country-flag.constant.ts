@@ -4,5 +4,4 @@ export const localeToLanguageDataMapper: Map<
 > = new Map([
   ['en', { flag: '🇬🇧', language: 'English' }],
   ['fa', { flag: '🇮🇷', language: 'فارسی' }],
-  ['fr', { flag: '🇫🇷', language: 'french' }],
 ]);
