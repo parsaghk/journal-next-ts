@@ -89,6 +89,117 @@
     },
     "submit": "ورود"
   },
+  "mutate-article-form": {
+    "steps": {
+      "general-information": "اطلاعات عمومی",
+      "additional-information": "اطلاعات اضافی",
+      "attachments-data": "پیوست‌ها",
+      "manuscript-data": "اطلاعات مقاله",
+      "questions": "پرسش‌ها"
+    },
+    "form": {
+      "submit": "تایید",
+      "next": "بعدی",
+      "previous": "قبلی",
+      "subject": {
+        "label": "موضوع",
+        "validations": {
+          "required-message": "لطفا موضوع مقاله را وارد کنید!"
+        }
+      },
+      "short-description": {
+        "label": "توضیح مختصر",
+        "validations": {
+          "required-message": "لطفا توضیح مختصر درباره مقاله را پر کنید!"
+        }
+      },
+      "article-type": {
+        "label": "نوع مقاله",
+        "validations": {
+          "required-message": "لطفا نوع مقاله را انتخاب کنید!"
+        }
+      },
+      "article-category": {
+        "label": "دسته‌بندی مقاله",
+        "validations": {
+          "required-message": "لطفا دسته‌بندی مقاله را انتخاب کنید!"
+        }
+      },
+      "funding-acknowledgement": {
+        "label": "تصدیق سرمایه مالی",
+        "text": "تمامی سرمایه‌های مالی تصدیق می‌شود.",
+        "validations": {
+          "required-message": "لطفا با تصدیق سرمایه مالی را موافقت کنید"
+        }
+      },
+      "conflict-of-interest": {
+        "label": "تضاد منافع"
+      },
+      "competing-interest-statement": {
+        "label": "بیانیه منافع رقابتی"
+      },
+      "upload-files": {
+        "label": "پیوست‌ها",
+        "validations": {
+          "required-message": "حداقل یک فایل باید آپلود کنید."
+        },
+        "upload": "آپلود",
+        "row-number": {
+          "label": "شماره."
+        },
+        "description": {
+          "label": "توضیحات",
+          "placeholder": "در صورت نیاز توضیحات را وارد کنید."
+        },
+        "file-type": {
+          "label": "نوع فایل",
+          "placeholder": "یک نوع فایل انتخاب کنید.",
+          "validations": {
+            "required-message": "لطفا یک نوع فایل انتخاب کنید!"
+          }
+        },
+        "file-name": {
+          "label": "نام فایل"
+        },
+        "file-size": {
+          "label": "حجم فایل"
+        },
+        "actions": {
+          "label": "عملیات",
+          "download": "دانلود",
+          "upload": "اپلود",
+          "delete": "حذف"
+        }
+      },
+      "title": {
+        "label": "عنوان",
+        "validations": {
+          "required-message": "لطفا عنوان را وارد کنید!"
+        }
+      },
+      "abstract": {
+        "label": "خلاصه",
+        "validations": {
+          "required-message": "لطفا خلاصه را وارد کنید!"
+        }
+      },
+      "keywords": {
+        "add": "اضافه کردن ",
+        "label": "کلمات کلیدی",
+        "placeholder": "یک کلمه کلید بنویسید",
+        "validations": {
+          "non-empty-field": "کلمه کلیدی نمی‌تواند خالی باشد!",
+          "required-message": "کلمه کلید حداقل یک مورد باید وارد شود!"
+        }
+      },
+      "questions": {
+        "placeholder": "پاسخ",
+        "validations": {
+          "required-message": "لطفا به پرسش ها پاسخ دهید!"
+        }
+      }
+    }
+  },
   "mutate-article-file-type-form": {
     "title": {
       "label": "عنوان",

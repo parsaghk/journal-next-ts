@@ -88,6 +88,117 @@
       }
     }
   },
+  "mutate-article-form": {
+    "steps": {
+      "general-information": "General Information",
+      "additional-information": "Additional Information",
+      "attachments-data": "Attachments Data",
+      "manuscript-data": "Manuscript Data",
+      "questions": "Questions"
+    },
+    "form": {
+      "submit": "Submit",
+      "next": "Next",
+      "previous": "Previous",
+      "subject": {
+        "label": "Subject",
+        "validations": {
+          "required-message": "Please enter subject!"
+        }
+      },
+      "short-description": {
+        "label": "Short description",
+        "validations": {
+          "required-message": "Please enter short description!"
+        }
+      },
+      "article-type": {
+        "label": "Article type",
+        "validations": {
+          "required-message": "Please choose an article type!"
+        }
+      },
+      "article-category": {
+        "label": "Article Category",
+        "validations": {
+          "required-message": "Please choose an article category!"
+        }
+      },
+      "funding-acknowledgement": {
+        "label": "Funding acknowledgement",
+        "text": "All funding sources have been acknowledged.",
+        "validations": {
+          "required-message": "Please agree with funding acknowledgement"
+        }
+      },
+      "conflict-of-interest": {
+        "label": "Conflict of interest"
+      },
+      "competing-interest-statement": {
+        "label": "Competing interest statement"
+      },
+      "upload-files": {
+        "label": "Attachments",
+        "validations": {
+          "required-message": "You must upload at least one file."
+        },
+        "upload": "Upload",
+        "row-number": {
+          "label": "No."
+        },
+        "description": {
+          "label": "Description",
+          "placeholder": "description ..."
+        },
+        "file-type": {
+          "label": "File type",
+          "placeholder": "Choose a file type ...",
+          "validations": {
+            "required-message": "You must choose a file type!"
+          }
+        },
+        "file-name": {
+          "label": "File name"
+        },
+        "file-size": {
+          "label": "File size"
+        },
+        "actions": {
+          "label": "Actions",
+          "download": "Download",
+          "upload": "Upload",
+          "delete": "Delete"
+        }
+      },
+      "title": {
+        "label": "Title",
+        "validations": {
+          "required-message": "Please enter title!"
+        }
+      },
+      "abstract": {
+        "label": "Abstract",
+        "validations": {
+          "required-message": "Please enter abstract!"
+        }
+      },
+      "keywords": {
+        "add": "Add",
+        "label": "Keywords",
+        "placeholder": "write a keyword",
+        "validations": {
+          "non-empty-field": "Keyword can not be empty!",
+          "required-message": "Please enter keywords!"
+        }
+      },
+      "questions": {
+        "placeholder": "Reply",
+        "validations": {
+          "required-message": "Please answer the question!"
+        }
+      }
+    }
+  },
   "mutate-article-file-type-form": {
     "title": {
       "label": "Title",
