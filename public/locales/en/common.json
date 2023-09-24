@@ -272,6 +272,19 @@
     "roles": "Roles",
     "permissions": "Permissions"
   },
+  "reject-article-modal": {
+    "title": "Reject article",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "form": {
+      "comment": {
+        "label": "Comment",
+        "validations": {
+          "required-message": "Please enter the comment."
+        }
+      }
+    }
+  },
   "register": {
     "success": "Registration completed successfully!",
     "login-details": {

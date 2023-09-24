@@ -277,6 +277,19 @@
     "roles": "نقش ها",
     "permissions": "دسترسی ها"
   },
+  "reject-article-modal": {
+    "title": "رد مقاله",
+    "submit": "تایید",
+    "cancel": "لغو",
+    "form": {
+      "comment": {
+        "label": "نظر",
+        "validations": {
+          "required-message": "لطفا خود را وارد کنید."
+        }
+      }
+    }
+  },
   "register": {
     "login-details": {
       "step-key": "اطلاعات ورود",
