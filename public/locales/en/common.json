@@ -240,6 +240,25 @@
     "dashboard": "Dashboard",
     "logout": "Logout"
   },
+  "process-article-modal": {
+    "title": "Process article",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "form": {
+      "editors": {
+        "label": "Editors",
+        "validations": {
+          "required-message": "Please select an editor!"
+        }
+      },
+      "jurors": {
+        "label": "Jurors",
+        "validations": {
+          "required-message": "Please select a juror"
+        }
+      }
+    }
+  },
   "sidebar": {
     "users": "Users",
     "dashboard": "Dashboard",

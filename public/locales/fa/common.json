@@ -245,6 +245,25 @@
     "dashboard": "داشبورد",
     "logout": "خروج"
   },
+  "process-article-modal": {
+    "title": "پردازش مقاله",
+    "submit": "ثبت",
+    "cancel": "لغو",
+    "form": {
+      "editors": {
+        "label": "ویراستاران",
+        "validations": {
+          "required-message": "لطفا یک ویراستار انتخاب کنید."
+        }
+      },
+      "jurors": {
+        "label": "داوران",
+        "validations": {
+          "required-message": "لطفا یک داور انتخاب کنید"
+        }
+      }
+    }
+  },
   "sidebar": {
     "users": "کاربران",
     "dashboard": "داشبورد",
