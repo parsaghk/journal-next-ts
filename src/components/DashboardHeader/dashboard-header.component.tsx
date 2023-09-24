@@ -1,16 +1,12 @@
-import {
-  DownOutlined,
-  PoweroffOutlined,
-  UserOutlined,
-} from '@ant-design/icons';
+import { PoweroffOutlined, UserOutlined } from '@ant-design/icons';
 import Hydration from '@components/Hydration';
 import LanguageDropdown from '@components/LanguageDropdown';
-import { RoleConstant } from '@constants/role.constant';
+import RoleDropdown from '@components/RoleDropdown';
+import { RoleEnum } from '@shared/enums';
 import {
   Avatar,
   Button,
   Col,
-  Dropdown,
   Layout,
   Row,
   Space,
@@ -34,24 +30,11 @@ const DashboardHeader: React.FC<TDashboardHeader> = ({
       <Row className="h-full" justify="space-between" align="middle">
         <Col span={2}>
           <Hydration>
-            <Dropdown
-              menu={{
-                items: userSummary?.roleList.map((role, index) => ({
-                  key: index,
-                  label: RoleConstant(role),
-                  onClick: () => {
-                    roleDropdownOnClick(role);
-                  },
-                })),
-              }}
-            >
-              <Button>
-                <Space>
-                  <DownOutlined />
-                  {RoleConstant(currentRole)}
-                </Space>
-              </Button>
-            </Dropdown>
+            <RoleDropdown
+              userRoleList={userSummary?.roleList as RoleEnum[]}
+              onClickDropdownItem={roleDropdownOnClick}
+              activeRole={currentRole}
+            />
           </Hydration>
         </Col>
         <Col span={2}>
