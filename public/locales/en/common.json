@@ -149,6 +149,11 @@
   "dashboard-description-section": {
     "back": "Back"
   },
+  "home": {
+    "newest-articles": "Newest Articles",
+    "more-articles": "More articles",
+    "read-article": "Click here to read the article"
+  },
   "login": {
     "submit": "Submit",
     "username": {
@@ -380,6 +385,9 @@
     }
   },
   "register": {
+    "next": "Next",
+    "previous": "Previous",
+    "submit": "Submit",
     "success": "Registration completed successfully!",
     "login-details": {
       "step-key": "Login Details",

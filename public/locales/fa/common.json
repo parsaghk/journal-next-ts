@@ -35,7 +35,6 @@
     "title": "ویرایش نوع فایل مقاله",
     "description": "شما در اینجا می‌توانید نوع فایل مقاله خود را ویرایش کنید"
   },
-
   "article-types-view": {
     "title": "نوع مقاله",
     "description": "شما می‌توانید در اینجا انواع مقالات خود را مدیریت کنید!",
@@ -150,6 +149,11 @@
   "example": "این یک متن تستی برای تست چند زبانگی می باشد",
   "dashboard-description-section": {
     "back": "بازگشت"
+  },
+  "home": {
+    "more-articles": "مقالات بیشتر",
+    "newest-articles": "جدیدترین مقالات",
+    "read-article": "برای خواندن مقاله اینجا کلیک کنید"
   },
   "login": {
     "username": {
@@ -387,12 +391,23 @@
     }
   },
   "register": {
+    "next": "بعدی",
+    "previous": "قبلی",
+    "submit": "تایید",
+    "success": "ثبت نام با موفقیت انجام شد!",
     "login-details": {
       "step-key": "اطلاعات ورود",
       "username": {
         "label": "نام کاربری",
         "validations": {
           "required-message": "لطفا نام کاربری را وارد کنید!"
+        }
+      },
+      "email": {
+        "label": "ایمیل",
+        "validations": {
+          "required-message": "لطفا ایمیل خود را وارد کنید!",
+          "type-message": "ایمیل وارد شده معتبر نیست!"
         }
       },
       "password": {
@@ -432,7 +447,16 @@
       "city": { "label": "شهر" }
     },
     "areas-of-interest-or-expertise": {
-      "step-key": "زمینه های مورد علاقه یا تخصص"
+      "step-key": "زمینه های مورد علاقه یا تخصص",
+      "personal-keywords": {
+        "button": "اضافه کردن کلمه کلیدی شخصی",
+        "label": "کلمات کلیدی شخصی",
+        "placeholder": "کلمه کلیدی",
+        "validations": {
+          "non-empty-field": "کلمه کلیدی نمی‌تواند خالی باشد",
+          "minimum-two-item-message": "حداقل دو کلمه کلیدی باید وارد شود."
+        }
+      }
     }
   }
 }
