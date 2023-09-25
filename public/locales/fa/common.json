@@ -54,6 +54,83 @@
     "title": "ویرایش نوع مقاله",
     "description": "شما در اینجا می‌توانید نوع مقاله خود را ویرایش کنید"
   },
+  "articles-edit": {
+    "title": "ویرایش کردن مقاله",
+    "description": "شما می‌توانید مقاله خود را توسط فرم زیر ویرایش کنید"
+  },
+  "articles-new": {
+    "title": "اضافه کردن مقاله",
+    "description": "با تکمیل فرم زیر می‌توانید مقاله خود را ثبت کنید"
+  },
+  "articles-view": {
+    "title": "مقالات",
+    "description": "در اینجا می‌توانید مقالات که به شما مربوط هست را مشاهده کنید",
+    "table": {
+      "author": "نویسنده",
+      "status": "وضعیت",
+      "actions": "عملیات",
+      "detail": "جزئیات",
+      "edit": "ویرایش"
+    },
+    "add": "اضافه کردن مقاله جدید"
+  },
+  "article-detail": {
+    "description-section": {
+      "title": "جزئیات مقاله",
+      "description": "شما می‌توانید در اینجا جزئیات مقاله را مشاهده کنید.",
+      "actions": {
+        "process": "پردازش",
+        "publish": "انتشار",
+        "publish-modal": {
+          "title": "اانتشار مقاله",
+          "content": "آیا مطمئن هستید می‌خواهید مقاله را منتشر کنید؟"
+        },
+        "accept": "تایید",
+        "reject": "لغو",
+        "accept-modal": {
+          "title": "تایید مقاله",
+          "content": "آیا مطمئن هستید می‌خواهید مقاله را تایید کنید؟"
+        }
+      }
+    },
+    "general-information": "اطلاعات کلی",
+    "subject": "موضوع",
+    "article-type": "نوع مقاله",
+    "article-category": "دسته بندی مقاله",
+    "status": "وضعیت",
+    "short-description": "توضیح مختصر",
+    "conflict-of-interest": "تضاد منافع",
+    "competing-interest-statement": "بیانیه منافع رقابتی",
+    "keywords": "کلمات کلیدی",
+    "manuscript-information": "اطلاعات مقاله",
+    "title": "عنوان",
+    "abstract": "خلاصه",
+    "personal-information": "اطلاعات شخصی",
+    "first-name": "نام",
+    "middle-name": "نام میانی",
+    "last-name": "نام خانوادگی",
+    "email": "رایانامه",
+    "position": "موقعیت",
+    "institution": "موسسه",
+    "department": "دپارتمان",
+    "questions": "پرسش‌ها",
+    "attachments": {
+      "header": "پیوست ها",
+      "row-number": "شماره .",
+      "description": "توضیحات",
+      "type": "نوع فایل",
+      "actions": "عملیات",
+      "preview": "پیش نمایش"
+    },
+    "status-history": {
+      "header": "تاریخچه وضعیت",
+      "row-number": "شماره .",
+      "owner": "مالک",
+      "role": "نقش",
+      "status": "وضعیت",
+      "date": "تاریخ"
+    }
+  },
   "constants": {
     "article-status": {
       "editing": "ویراستاری",

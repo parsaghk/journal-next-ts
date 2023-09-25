@@ -53,6 +53,82 @@
     "title": "Edit new article type",
     "description": "You can edit new article type here!"
   },
+  "articles-edit": {
+    "title": "Edit article",
+    "description": "You can edit your article by changing form below."
+  },
+  "articles-new": {
+    "title": "Add article",
+    "description": "You can submit your article by completing form below."
+  },
+  "articles-view": {
+    "title": "Articles",
+    "description": "You can see the articles related to you",
+    "table": {
+      "author": "Author",
+      "status": "Status",
+      "actions": "Actions",
+      "detail": "Detail",
+      "edit": "Edit"
+    },
+    "add": "Add new article"
+  },
+  "article-detail": {
+    "description-section": {
+      "title": "Article Detail",
+      "description": "You can observe the detail of article here.",
+      "actions": {
+        "process": "Process",
+        "publish": "Publish",
+        "publish-modal": {
+          "title": "Process",
+          "content": "Are you sure you want to publish your article?"
+        },
+        "accept": "Accept",
+        "accept-modal": {
+          "title": "Accept article",
+          "content": "Are you sure you want to accept your article?"
+        }
+      }
+    },
+    "general-information": "General Information",
+    "subject": "Subject",
+    "article-type": "Article type",
+    "article-category": "Article category",
+    "status": "Status",
+    "short-description": "Short description",
+    "conflict-of-interest": "Conflict of interest",
+    "competing-interest-statement": "Competing interest statement",
+    "keywords": "Keywords",
+    "manuscript-information": "Manuscript Information",
+    "title": "Title",
+    "abstract": "Abstract",
+    "personal-information": "Personal information",
+    "first-name": "First name",
+    "middle-name": "Middle name",
+    "last-name": "Last name",
+    "email": "Email",
+    "position": "Position",
+    "institution": "Institution",
+    "department": "Department",
+    "questions": "Questions",
+    "attachments": {
+      "header": "Attachments",
+      "row-number": "No.",
+      "description": "Description",
+      "type": "File Type",
+      "actions": "Actions",
+      "preview": "Preview"
+    },
+    "status-history": {
+      "header": "Status History",
+      "row-number": "No.",
+      "owner": "Owner",
+      "role": "Role",
+      "status": "Status",
+      "date": "Date"
+    }
+  },
   "constants": {
     "article-status": {
       "editing": "Editing",
