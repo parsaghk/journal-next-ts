@@ -1,5 +1,5 @@
 import { TPlainLiteralObject } from '@shared/types';
-import flat, { unflatten } from 'flat';
+import { flatten, unflatten } from 'flat';
 import _ from 'lodash';
 import { useRouter } from 'next/router';
 import qs from 'qs';
@@ -26,9 +26,9 @@ function mergeQueryOptions(
   defaultQueryOptions: TPlainLiteralObject = {}
 ): TPlainLiteralObject {
   const flattenCurrentQueryOptions: TPlainLiteralObject =
-    flat(currentQueryOptions);
+    flatten(currentQueryOptions);
   const flattenDefaultQueryOptions: TPlainLiteralObject =
-    flat(defaultQueryOptions);
+    flatten(defaultQueryOptions);
   const flattenMergedQueryOptions: TPlainLiteralObject = {
     ...flattenCurrentQueryOptions,
     ...flattenDefaultQueryOptions,
