@@ -259,6 +259,24 @@
       }
     }
   },
+  "questions-view": {
+    "title": "Questions",
+    "description": "You can manage your questions here",
+    "add": "Create new question",
+    "table": {
+      "title": "Title",
+      "actions": "Actions",
+      "edit": "Edit"
+    }
+  },
+  "questions-new": {
+    "title": "Create new question",
+    "description": "You can add new question here!"
+  },
+  "questions-edit": {
+    "title": "Edit new question",
+    "description": "You can edit new question here!"
+  },
   "sidebar": {
     "users": "Users",
     "dashboard": "Dashboard",
